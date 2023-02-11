@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #ff9a4b;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 300px;
+  margin: 50px 0;
+  padding: 10px;
+  background-color: #EEEEEE;
+  position: relative;
+}
+.box:nth-child(2) {
+  margin: 50px 30px;
+}
+.step {
+  background-color: #ff9a4b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white
+}
+.img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+h3 {
+  margin: 15px 0 5px;
+}
+.text {
+  width: auto;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #AAAAAA;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+  .box {
+    width: 90%;
+  }
+  .box:first-child {
+    margin: 50px auto 20px;
+  }
+  .box:nth-child(2) {
+    margin: auto;
+  }
+  .box:last-child {
+    margin: 20px auto 50px;
+  }
+}
